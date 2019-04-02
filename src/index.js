@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 /* Add NavLink to importer */
 import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
- 
+
 /* Add basic styling for NavLinks */
 const link = {
   width: '100px',
@@ -12,7 +12,7 @@ const link = {
   textDecoration: 'none',
   color: 'white',
 }
- 
+
 /* add the navbar component */
 const Navbar = () =>
   <div>
@@ -44,11 +44,11 @@ const Navbar = () =>
       }}
     >Login</NavLink>
   </div>;
- 
+
 const Home = () => <h1>Home!</h1>;
- 
+
 const About = () => <h1>This is my about component!</h1>;
- 
+
 const Login = () =>
   <form>
     <h1>Login</h1>
@@ -62,7 +62,7 @@ const Login = () =>
     </div>
     <input type="submit" value="Login" />
   </form>;
- 
+
 ReactDOM.render((
   <Router>
     <React.Fragment>
